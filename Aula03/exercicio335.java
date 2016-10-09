@@ -9,15 +9,22 @@ public class exercicio335 {
 		System.out.print("Introduza um valor: ");
 		int valor = sc.nextInt();
 		
-		String primo = " é primo";
-		if (valor == 2) primo = " é primo";
+		while (valor <= 0) {
+			System.out.print("O número não é válido, introduza novamente: ");
+			valor = sc.nextInt();
+		}
+		
+		
+		Boolean primo = true;
+		if (valor == 2) primo = true;
 		else {
 			for(int i = 2;i < valor; i++) {
-				if (valor % i == 0) primo = " não é primo";
+				if (valor % i == 0) primo = false;
 			}
 		}
-
-		System.out.println("O número " + valor + primo); 
+		if (primo) System.out.println("O número " + valor + " é primo!");  
+		else System.out.println("O número " + valor + " não é primo!"); 
+		
 	}
 
 }

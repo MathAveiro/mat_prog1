@@ -9,12 +9,12 @@ public class exercicio334 {
 		
 		Scanner sc = new Scanner(System.in);
 		// TODO Auto-generated method stub
-		System.out.print("Introduza um valor");
+		System.out.print("Introduza um valor: ");
 		valor = sc.nextInt();
 
 		do {
-
-			System.out.print("Introuza um valor");
+			if(valor < secret) System.out.print("O número a adivinhar é mais alto. Introuza novamente um valor: ");
+			else if (valor > secret) System.out.print("O número a adivinhar é mais baixo. Introuza novamente um valor: ");
 			valor = sc.nextInt();
 
 			qnt += 1;

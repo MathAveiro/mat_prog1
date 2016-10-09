@@ -8,18 +8,18 @@ public class exercicio332 {
 		// TODO Auto-generated method stub
 		
 		int cont = 0;
-		int num = 0;
-		int numTotal = 1;
+		double num = 0;
+		double numTotal = 1;
 		
 		do {
 			
 			System.out.print("Introduza um número válido: ");
-			num = sc.nextInt();
+			num = sc.nextDouble();
 			if (num != 0) numTotal = numTotal * num;
 			
 		} while(num != 0);
 		
-		System.out.println(numTotal);
+		System.out.println("O produto dos números introduzidos é: " + numTotal);
 		
 	}
 

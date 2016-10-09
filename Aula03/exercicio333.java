@@ -7,14 +7,14 @@ public class exercicio333 {
 		Scanner sc = new Scanner(System.in);
 		// TODO Auto-generated method stub
 
-		double num, prim, a, b, media, qnt=0, vlr;
+		double num, prim, max, min, media, qnt=0, vlr;
 		
 		System.out.print("Introduza uma lista de números: ");
 		prim = sc.nextDouble();
 		
 		vlr = prim;
-		a = vlr;
-		b = vlr;
+		max = vlr;
+		min = vlr;
 		
 		do {
 		
@@ -25,8 +25,8 @@ public class exercicio333 {
 				
 			if (num != prim) {
 
-				if (num < a) a = num;
-				if (num > b) b = num;
+				if (num < min) min = num;
+				if (num > max) max = num;
 		
 				vlr = vlr + num;
 			}
@@ -34,7 +34,7 @@ public class exercicio333 {
 		
 		media = vlr / qnt;
 			
-		System.out.println("O número mais elevado é: "+b+", o número mais baixo é: "+a+", a média é de: "+media+" e o número de elementos da lista é de: "+qnt);
+		System.out.println("O número mais elevado é: "+max+", o número mais baixo é: "+min+", a média é de: "+media+" e o número de elementos da lista é de: "+qnt);
 	}
 
 }
