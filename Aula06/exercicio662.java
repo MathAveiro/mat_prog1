@@ -11,7 +11,7 @@ public class exercicio662 {
 		int n = sc.nextInt();
 
 		int count = 0;
-		int[] nSequence = new int[10];
+		int[] nSequence = new int[100];
 
 		do {
 
