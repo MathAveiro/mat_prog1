@@ -6,12 +6,10 @@ public class exercicio555 {
 
 		Scanner sc = new Scanner(System.in);
 		// TODO Auto-generated method stub
-		System.out.println("Insira a altura: ");
-		int a = sc.nextInt();
-
-		System.out.println("Insira a largura: ");
+		System.out.print("Largura: ");
 		int l = sc.nextInt();
-
-
+		System.out.print("Altura: ");
+		int a = sc.nextInt();		
+		Funcoes.retangulo(a, l);
 	}
 }
