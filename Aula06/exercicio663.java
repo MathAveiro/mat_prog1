@@ -22,120 +22,37 @@ public class exercicio663 {
 			switch(op) {
 				case 1: 
 
-					count = 0;
-
-					do {
-
-						out.print("Insert the element number " + (count+1) + ": ");
-						sequence[count] =  sc.nextInt();
-						if(sequence[count] ==  0) break;
-						count++;
-
-					} while(count < sequence.length);
+					count = readSequence(count, sequence);
 
 					break;
 
 				case 2: 
 
-					out.print("Sequence: ");
-
-					for (int j=0; j < count; j++) {
-						if(j == count-1) out.println(sequence[j]);
-						else out.print(sequence[j] + " - ");
-					}
+					writeSequence(count, sequence);
 
 					break;
 
 				case 3: 
 
-					int max = 0;
-
-					for (int j=0; j < count; j++) {
-						
-						if(sequence[j] >= max) max = sequence[j];
-
-					}
-
-					out.println("The maximum value of the sequence is: " + max);
-
+					findMax(count, sequence);
+			
 					break;
 
 				case 4: 
 
-					int min = sequence[0];
-
-					for (int j=0; j < count; j++) {
-						
-						if(sequence[j] <= min) min = sequence[j];
-
-					}
-
-					out.println("The maximum value of the sequence is: " + min);
+					findMin(count, sequence);
 
 					break;
 
 				case 5: 
 
-					Double sum = 0.0;
-					Double med;
-					int i=0;
-
-					for (int j = 0; j < count ; j++) {
-						
-						sum = sum + sequence[j];
-						i++;
-
-					}
-
-					med = sum/(i);
-
-					out.println("The total of the sequence is " + sum + ", the average of the sequence is " + med + " and have " + i + " elements");
+					findAverage(count, sequence);
 
 					break;
 				
 				case 6: 
 				
-					boolean pair = false, odd = false;
-
-					for(int j = 0; j < count; j++) {
-
-						if(!(sequence[j]%2 == 0)) {
-
-							pair = false; 
-							break;
-						
-						}
-
-						else {
-
-							pair = true;
-
-						}
-
-					}
-
-					for(int j = 0; j < count; j++) {
-
-						if(sequence[j]%2 == 0) {
-
-							odd = false; 
-							break;
-						
-						}
-
-						else {
-
-							odd = true;
-
-						}
-
-					}
-
-					if(pair) out.println("The sequence is composed only of pairs numbers!");
-
-					else if(odd) out.println("The sequence consists only of odd numbers!");
-
-					else out.println("The sequence is not composed of only odd or pairs numbers!");
+					checkSequence(count, sequence);
 
 					break;
 
@@ -155,6 +72,125 @@ public class exercicio663 {
 			out.println();
 
 		}while(op != 10);
+
+	}
+
+	public static int readSequence(int count, int[] sequence) {
+
+		count = 0;
+
+		do {
+			out.print("Insert the element number " + (count+1) + ": ");
+			sequence[count] =  sc.nextInt();
+			if(sequence[count] ==  0) break;
+			count++;
+		} while(count < sequence.length);
+
+		return count;
+
+	}
+
+	public static void writeSequence(int count, int[] sequence) {
+
+		out.print("Sequence: ");
+
+		for (int j=0; j < count; j++) {
+			if(j == count-1) out.println(sequence[j]);
+			else out.print(sequence[j] + " - ");
+		}
+
+	}
+
+	public static void findMax(int count, int[] sequence) {
+
+		int max = 0;
+
+		for (int j=0; j < count; j++) {
+		
+			if(sequence[j] >= max) max = sequence[j];
+
+		}
+
+		out.println("The maximum value of the sequence is: " + max);
+
+	}
+
+	public static void findMin(int count, int[] sequence) {
+
+		int min = sequence[0];
+
+		for (int j=0; j < count; j++) {
+					
+			if(sequence[j] <= min) min = sequence[j];
+
+		}
+
+		out.println("The maximum value of the sequence is: " + min);
+
+	}
+
+	public static void findAverage(int count, int[] sequence) {
+
+		Double sum = 0.0;
+		Double med;
+		int i=0;
+
+		for (int j = 0; j < count ; j++) {
+				
+			sum = sum + sequence[j];
+			i++;
+
+		}
+
+		med = sum/(i);
+
+		out.println("The total of the sequence is " + sum + ", the average of the sequence is " + med + " and have " + i + " elements");
+
+	}
+
+	public static void checkSequence(int count, int[] sequence) {
+
+		boolean pair = false, odd = false;
+
+		for(int j = 0; j < count; j++) {
+
+			if(!(sequence[j]%2 == 0)) {
+
+				pair = false; 
+				break;
+						
+			}
+
+			else {
+
+				pair = true;
+
+			}
+
+		}
+
+		for(int j = 0; j < count; j++) {
+
+			if(sequence[j]%2 == 0) {
+
+				odd = false; 
+				break;
+						
+			}
+
+			else {
+
+				odd = true;
+
+			}
+
+		}
+
+		if(pair) out.println("The sequence is composed only of pairs numbers!");
+
+		else if(odd) out.println("The sequence consists only of odd numbers!");
+
+		else out.println("The sequence is not composed of only odd or pairs numbers!");
 
 	}
 }
