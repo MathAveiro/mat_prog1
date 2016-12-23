@@ -1,7 +1,11 @@
+/*
+ * Boas Festas!!!!!
+ */
+
 import java.util.*;
 import java.io.*;
 import static java.lang.System.*;
-public class ExercicioPilotos{
+public class Pilotos{
 	static Scanner sc=new Scanner (in);
 	public static void main(String[]args){
 
