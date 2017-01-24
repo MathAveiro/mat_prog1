@@ -1,0 +1,13 @@
+80459  João                      15
+80460  Manuel                     12
+80461  Beatriz                    11
+80462  Maria                       7
+80463  António                   17
+80464  Franscisco                  6
+80465  Inês                      15
+80466  Joaquim                     5
+80467  Mariana                     0
+80468  Paulo                      19
+80469  Diogo                      17
+80470  Ana                        13
+80471  Luis                        5
