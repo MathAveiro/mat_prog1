@@ -1,0 +1,6 @@
+Nota máxima:                   	19
+Nota mínima:                   	 0
+Média:                         	10,9
+Número de alunos aprovados     	 8
+Número de alunos reprovados:   	 5
+Média dos alunos aprovados:    	14,9
