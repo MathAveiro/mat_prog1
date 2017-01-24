@@ -1,0 +1,6 @@
+Número de dias:  	15
+Média dia:       	 8,7
+Média noite:     	 3,7
+Variância dia:   	46,4
+Variância noite: 	34,6
+Dias t negativas:	 5
