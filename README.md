@@ -1,4 +1,4 @@
-# mat_prog1
+# Mat_prog1
 Exercícios resolvidos de Programação I
 
 Este repositório serve de suporte à resolução de exercícios de Programação I (java).
