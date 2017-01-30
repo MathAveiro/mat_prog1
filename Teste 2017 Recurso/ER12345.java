@@ -1,3 +1,5 @@
+//EM FALTA: Colocar a primeira letra do nome em Maiúscula (na função guardarFicheiro());
+
 import static java.lang.System.*;
 import java.io.*;
 import java.util.*;
