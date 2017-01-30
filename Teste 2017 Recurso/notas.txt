@@ -1,0 +1,11 @@
+10
+80459  Claudio 12 16
+60342  Ines 16 -1
+56732  Rita -1 -1
+56032  Fabio 8 12
+80903  Guida -1 9
+23464  Joao 13 17
+56032  Pedro 18 13
+56231  Joana 19 12
+80459  Antonio 10 10
+23135  Maria 9 16
