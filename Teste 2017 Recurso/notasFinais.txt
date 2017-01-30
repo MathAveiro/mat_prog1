@@ -1,0 +1,11 @@
+Numero	Nome	T1	T2	Final
+80903	Guida	-1	9	5
+80459	Claudio	12	16	14
+80459	Antonio	10	10	10
+60342	Ines	16	-1	8
+56732	Rita	-1	-1	0
+56231	Joana	19	12	16
+56032	Fabio	8	12	10
+56032	Pedro	18	13	16
+23464	Joao	13	17	15
+23135	Maria	9	16	13
