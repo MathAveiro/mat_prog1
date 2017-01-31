@@ -1,5 +1,3 @@
-//EM FALTA: Colocar a primeira letra do nome em Maiúscula (na função guardarFicheiro());
-
 import static java.lang.System.*;
 import java.io.*;
 import java.util.*;
@@ -86,6 +84,12 @@ public class ER12345 {
 	}
 	public static void guardarFicheiro (File fin, Aluno [] alunos) throws IOException {
 		PrintWriter pwr = new PrintWriter (fin);
+		for (int i = 0;i < alunos.length; i++) {
+			String novoNome = "";
+			novoNome += Character.toUpperCase(alunos[i].nome.charAt(0));
+			for (int j = 1;j < alunos[i].nome.length(); j++) novoNome += alunos[i].nome.charAt(j);
+			alunos[i].nome = novoNome;
+		}
 		pwr.printf("Numero\tNome\tT1\tT2\tFinal\n");
 		for (int i = 0;i < alunos.length ;i++) pwr.printf("%d\t%s\t%d\t%d\t%d\n", alunos[i].numero, alunos[i].nome, alunos[i].teste1, alunos[i].teste2, alunos[i].notaFinal);
 		pwr.close();
@@ -106,7 +110,7 @@ public class ER12345 {
 		for (int i = 1; i< alunos.length; i++) if (alunos[i].numero == alunos[i-1].numero) count++;
 		Aluno [] novoAlunos = new Aluno[alunos.length - count];
 		Aluno [] temp = alunos;
-		for (int i = 1; i< temp.length; i++) if (temp[i].numero == temp[i-1].numero) for (int j = i; j < temp.length-1; j++) temp[j] = temp [j+1];		
+		for (int i = 1; i < temp.length; i++) if (temp[i].numero == temp[i-1].numero) for (int j = i; j < temp.length-1; j++) temp[j] = temp [j+1];		
 		for (int i = 0; i < novoAlunos.length; i++) novoAlunos[i] = temp[i];
 		return novoAlunos;
 	}
